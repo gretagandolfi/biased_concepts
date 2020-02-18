@@ -1,5 +1,7 @@
 from scipy.stats import spearmanr
 from scipy import spatial
+import pickle
+from gensim.models.fasttext import FastText
 
 sim = open('MEN_dataset_natural_form_full.txt', 'r')
 word_tokenized_corpus = pickle.load(open('word_tokenized_corpus.pkl', 'rb'))
