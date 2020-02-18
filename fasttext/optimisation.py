@@ -9,11 +9,12 @@ word_tokenized_corpus = pickle.load(open('word_tokenized_corpus.pkl', 'rb'))
 def function(embedding_size, window_size, min_word, 
              down_sampling, negative):
     
-    model = FastText(word_tokenized_corpus,  size=embedding_size,
-                      window=window_size,
-                      #min_count=min_word,
-                      sample=down_sampling, negative=negative,
+    model = FastText(word_tokenized_corpus,  size=int(embedding_size),
+                      window=int(window_size),
+                      min_count=int(min_word),
+                      sample=int(down_sampling), negative=int(negative),
                       sg=1)
+    
     sim = open('MEN_dataset_natural_form_full.txt', 'r')
     system = []
     gold = []
