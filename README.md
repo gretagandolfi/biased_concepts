@@ -1,4 +1,4 @@
-# thesis
+
 Shared repository for codes and data. 
 
 __corpus__ contains the Reddit dataset. By now, I put together data from the following subreddits: 
