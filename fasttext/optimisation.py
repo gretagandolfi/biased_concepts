@@ -6,7 +6,7 @@ from gensim.models.fasttext import FastText
 
 word_tokenized_corpus = pickle.load(open('word_tokenized_corpus.pkl', 'rb'))
 
-def function(embedding_size, window_size, min_word, 
+def correlation_function(embedding_size, window_size, min_word, 
              down_sampling, negative):
     
     model = FastText(word_tokenized_corpus,  size=int(embedding_size),
@@ -32,12 +32,12 @@ def function(embedding_size, window_size, min_word,
     return spearmanr(system, gold).correlation
     
     
-print(function(300,20,23,0,5))
+print(correlation_function(300,20,23,0,5))
 
 from bayes_opt import BayesianOptimization 
 pbounds = {'embedding_size': (5,300), 'window_size': (3,20), 'min_word': (20,200), 
            'down_sampling': (0, 1e-5), 'negative': (5,20)}
-optimizer = BayesianOptimization(f=function, pbounds=pbounds)
+optimizer = BayesianOptimization(f=correlation_function, pbounds=pbounds)
 
 
 optimizer.maximize(
