@@ -32,6 +32,7 @@ def ranking(model):
                 row.append(str(v)[:5])
         rows.append(row)
 
-    print('\t'.join([i for i in columns]))
-    for row in rows:
-        print('\t'.join([i for i in row]))
+    tab = pd.DataFrame(rows)
+    tab.columns = columns
+    
+    return tab
