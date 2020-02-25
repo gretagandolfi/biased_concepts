@@ -27,7 +27,7 @@ def ranking(model):
         row = [str(param_set["target"])[:6]]
         for k,v in param_set["params"].items():
             if k not in ["lrate","wdecay"]:
-                row.append(str(int(v)))
+                row.append(str(float(v)))
             else:
                 row.append(str(v)[:5])
         rows.append(row)
