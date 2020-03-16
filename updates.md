@@ -76,7 +76,9 @@ To  check  for  the  goodness  of  the  models,  before  any  check  on  the  se
 01.03.2020
 
 The best thing to do is to create a strict plan (methodologically speaking).  I can start by the related work and then, I will write down my plan. Hints:
+
 • use and additive model to check for the consistency of the space.  It would be  possible  to  run  different  experiment  and  check  for  the  target  words, with different training set.
+
 • the results should be stable.
 
 06.03.2020
@@ -142,9 +144,15 @@ Meanwhile, I started working on this step (+). I used the pretrained vectors (fr
 Now I’m searching a way to save the models in a format compatible with the code that Aurelie provided me with (speakers in a vat). 
 
 _To do_: 
+
 • increase corpora (new subreddit), to decrease the chance of noise; 
+
 • re-train models controlling for the learning rate; 
+
 • consider the mixed corpora strategy (contact Jelke Bloem in case);
+
 • save the models in the proper format; 
+
 • look at the thesis of the previous master students in Trento;
+
 • start writing 'related work' section.
