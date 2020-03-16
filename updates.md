@@ -2,7 +2,9 @@
 
 __Broad topic__:  definition of biases expressed in language.  
 Two main perspectives:
+
 • philosophical:  concepts are characterised by properties.  Properties can benecessary (definitional) or additional.  A biased concept differs from a neutral one because of the different configuration of non-necessary properties. Let’s explore how these properties change.
+
 • distributional:  biased concepts can be identified by their geometrical representation in the semantic space. We can look for a geometrical/operative definition that all (or the majority) of biased concepts can share.
 
 __Proposal__:  take  two  polarised  communities  from  Reddit,  build  two  semantic spaces and compare them, focusing on some target concepts.  It can be hard to compare concepts coming from different semantic spaces since all concepts are connected and perturbations of a concept would result in perturbations of the semantic space as a whole.  An idea could be to use rotation/scaling at a global or at a local level in both the semantic spaces (and the code Aurelie provided) to check how different they are whether it makes sense to compare them.  If the experiment fails, we can analyse the reasons for this failure.
@@ -129,8 +131,11 @@ Re-formulation of already discussed problems:
 	* increase data size (I identified other Reddit  sub-communities that can be used to provide data produced by democrats and republicans. They are listed in Soliman, Ahmed & Hafer, Jan & Lemmerich, Florian. 	(2019). A Characterization of Political Communities on Reddit. 259-263. 10.1145/3342220.3343662. The paper is more about the network structure rather than the meaning of what the users wrote but they did an 	interesting preliminary work to identify political hubs on Reddit; 
 	* use a __pretrained model and keep training on both corpora__. So to have three models (neutral model built upon Wikipedia vectors, wiki + dem, wiki + rep) (+);
 	* use more fine graded __methods to deal with small data__: 
+	
 		> Nonce2Vec 
+		
 		> Additive model
+		
 		> Concatenated model (with marked target concepts). 
 
 - __concept selection__: how to select and make a hypothesis on the difference expected. 
