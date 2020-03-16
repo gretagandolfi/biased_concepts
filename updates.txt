@@ -1,5 +1,5 @@
 31.01.2020
-Broad topic:  definition of biases expressed in language.  Two main perspectives:
+_Broad topic_:  definition of biases expressed in language.  Two main perspectives:
 • philosophical:  concepts are characterised by properties.  Properties can be
 necessary (definitional) or additional.  A biased concept differs from a neu-
 tral one because of the different configuration of non-necessary properties.
