@@ -182,13 +182,9 @@ a) I started writing the related work section, that, by now has this (draft) str
 
 
 b) I expanded the corpora. New correlation scores: 
-
 •  pre-trained model gives always 0.76 (old: 0.76)
-
 •  pre-trained + dem: 0.71 (old, smaller: 0.68)
- 
-•  pre-trained + rep: 0.69 (old, smaller: 0.68)
-
+ •  pre-trained + rep: 0.69 (old, smaller: 0.68)
 
 
 _To do_: 
