@@ -150,14 +150,55 @@ Now I’m searching a way to save the models in a format compatible with the cod
 
 _To do_: 
 
-• increase corpora (new subreddit), to decrease the chance of noise; 
+• increase corpora (new subreddit), to decrease the chance of noise; +
 
 • re-train models controlling for the learning rate; 
 
-• consider the mixed corpora strategy (contact Jelke Bloem in case);
+• consider the mixed corpora strategy (contact Jelke Bloem in case); 
 
-• save the models in the proper format; 
+• save the models in the proper format; +
 
-• look at the thesis of the previous master students in Trento;
+• look at the thesis of the previous master students in Trento; +
 
-• start writing 'related work' section.
+• start writing 'related work' section. +
+
+
+
+23.03.2020
+
+a) I started writing the related work section, that, by now has this (draft) structure: 
+
+1. What is Distributional Semantics?
+
+2. Biases in DS. 
+
+ 	2.1 What is bias? Literature from cognitive science, sociology and so on + relation between bias and stereotypes. 
+ 
+ 	2.2 Work on bias in distributional semantics: descriptive works and debasing methods
+ 
+3. Meaning shift as a method to identify different perspectives —> stereotypical views
+
+4. Measuring perturbations methods
+
+
+b) I expanded the corpora. New correlation scores: 
+
+•  pre-trained model gives always 0.76 (old: 0.76)
+
+•  pre-trained + dem: 0.71 (old, smaller: 0.68)
+ 
+•  pre-trained + rep: 0.69 (old, smaller: 0.68)
+
+
+
+_To do_: 
+
+* optimisation particularly focused on the learning rate; 
+
+* random perturbation of the pre-trained model (to be used as the baseline comparison)
+
+* keep writing
+
+* check the argumentation mining literature
+
+* consider the mixed corpora strategy (contact Jelke Bloem in case); 
