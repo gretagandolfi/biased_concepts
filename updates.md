@@ -198,3 +198,14 @@ _To do_:
 * check the argumentation mining literature
 
 * consider the mixed corpora strategy (contact Jelke Bloem in case); 
+
+29.03.2020
+
+I kept writing. I'm planning to be ready to propose something concrete to you for the end of next week.
+I checked the perturbation strategies suggested by Aurelie (Gaussian noise. I'm trying to understand how to implement it on my models). 
+
+Moreover, I had a new idea: I read this paper: Sudeep Bhatia, The semantic representation of prejudice and stereotypes, Cognition, Volume 164, 2017 and I noticed how they showed that the amount of stereotypes revealed by LSA models strongly relies on their dimensionality (less dimension, more stereotype). It could be nice to compare the same model, applying post-processing dimensionality reduction and check how our analysis of biases change. This can be a way to: 
+* check whether the dimensionality factor impacts on word-embeddings
+* control for random factors and avoid pitfalls
+
+In this other paper: Word Embedding Perturbation for Sentence Classification (2018), Dongxu Zhang and Zhichao Yang show how to apply dimensionality reduction (with 3 different methods) on pre-trained models (including one created with fasttext on wiki data - our case) without losing accuracy. 
