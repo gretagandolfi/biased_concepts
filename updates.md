@@ -193,9 +193,9 @@ _To do_:
 
 * random perturbation of the pre-trained model (to be used as the baseline comparison)
 
-* keep writing
+* keep writing +
 
-* check the argumentation mining literature
+* check the argumentation mining literature +
 
 * consider the mixed corpora strategy (contact Jelke Bloem in case); 
 
