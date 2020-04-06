@@ -209,3 +209,19 @@ Moreover, I had a new idea: I read this paper: Sudeep Bhatia, The semantic repre
 * control for random factors and avoid pitfalls
 
 In this other paper: Word Embedding Perturbation for Sentence Classification (2018), Dongxu Zhang and Zhichao Yang show how to apply dimensionality reduction (with 3 different methods) on pre-trained models (including one created with fasttext on wiki data - our case) without losing accuracy. 
+
+02.04.2020
+
+_To do_:
+
+* apply the gaussian perturbation on the whole control corpus (summing the vectors, then I should be do it locally); 
+
+* take 10 iteration with different learning rates 
+
+* to select the target concepts: TFIDF + target terms
+
+* On the measures of perturbation: 
+	- RSA gives a general measure of how much a concept changed;
+	- __SimLex__ is better for evaluation (MEN has more concrete objects);
+	- isolation is not so meaningful in this context;
+	- __rotation__ is the relevant concept. 
