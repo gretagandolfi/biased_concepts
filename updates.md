@@ -227,6 +227,7 @@ _To do_:
 	- __rotation__ is the relevant concept. 
 
 10.04.2020
+
 I nearly finished the 'related work' section. From a practical point of view, I: 
 - wrote the code for the Gaussian and exponential perturbation for the control space (globally applied)
 - tried to optimize the learning rate (with quite bad results) to train the model on new corpora
