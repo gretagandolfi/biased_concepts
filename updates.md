@@ -225,3 +225,14 @@ _To do_:
 	- __SimLex__ is better for evaluation (MEN has more concrete objects);
 	- isolation is not so meaningful in this context;
 	- __rotation__ is the relevant concept. 
+
+10.04.2020
+I nearly finished the 'related work' section. From a practical point of view, I: 
+- wrote the code for the Gaussian and exponential perturbation for the control space (globally applied)
+- tried to optimize the learning rate (with quite bad results) to train the model on new corpora
+
+To do: 
+* fix issue with learning rate
+* try with different percentage of gaussian perturbation (by now: +10%, + 20%)
+* try the exponential perturbation for the range of values stated in Aurelie's paper ([1.1, 1.2...1.9] and [0.1, 0.2...0.9])
+
