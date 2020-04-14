@@ -233,7 +233,8 @@ I nearly finished the 'related work' section. From a practical point of view, I:
 - tried to optimize the learning rate (with quite bad results) to train the model on new corpora
 
 To do: 
-* fix issue with learning rate
-* try with different percentage of gaussian perturbation (by now: +10%, + 20%)
-* try the exponential perturbation for the range of values stated in Aurelie's paper ([1.1, 1.2...1.9] and [0.1, 0.2...0.9])
+* fix issue with learning rate 
+* try with different percentage of gaussian perturbation (by now: +10%, + 20%) +
+* try the exponential perturbation for the range of values stated in Aurelie's paper ([1.1, 1.2...1.9] and [0.1, 0.2...0.9]) +
+
 
