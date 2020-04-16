@@ -237,4 +237,22 @@ To do:
 * try with different percentage of gaussian perturbation (by now: +10%, + 20%) +
 * try the exponential perturbation for the range of values stated in Aurelie's paper ([1.1, 1.2...1.9] and [0.1, 0.2...0.9]) +
 
+16.04.2020
+
+I applied the __Gaussian perturbation__ (+/- range(10,90)) and the __Exponential perturbation__ (from 0.1 to 1.9) and the on the control (pretrained, wiki 300-d vectors). The correlation scores don't depart too much from the control: 
+* MIN Gaussian: MEN 0,668 - SimLex 0,305
+* MIN Exponential: MEN 0,571 - SimLex 0,265
+
+However, a strange patter can be noticed: a non-symmetrical behavior of the curve representing the accuracy. 
+ 
+The issue on the __learning rate__ can faced also with _random sampling_ of the new data.
+
+Lastly, I'm checking to find a way to control for the frequency of target and control words. 
+
+To do: 
+* control for the minmal variation between controls and targets. 
+* start writing - informally - the experimental setting/the steps I did.
+* learning rate.
+
+
 
