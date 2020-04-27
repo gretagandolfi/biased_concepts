@@ -12,8 +12,6 @@ import itertools
 #pretrained model (default parameters, 300 dimensions)
 model_path = '/Volumes/greta/models/model1.bin' 
 model1 = FastText.load_fasttext_format(model_path)
- 
-
 
 #compute percentage
 def percentage(part, whole):
@@ -49,14 +47,9 @@ def create_perturbation_G(x):
 	SIM = correlations.correlates_SIM(model1)
 	return print('M:', MEN, 'S:', SIM)
 
-for i in range(10,100,10):
-	model1.wv.vectors = control
-	print(create_perturbation_G(i))
 
-
-#whole function
-def create_perturbation_local_G_add(y,bin):
-     dec = len(vocab)/1000
+def create_perturbation_local_G_add(y,bin, n_bins):
+     dec = len(vocab)/n_bins
      x = list(divide_chunks(vocab, int(dec)))
      vec_x = [model1.wv[i] for i in x[bin]]
      vec_before = []
@@ -115,5 +108,9 @@ def create_perturbation_local_G_min(y,bin):
 	MEN = correlations.correlates(model1)
 	SIM = correlations.correlates_SIM(model1)
 	return print('M:', MEN, '/n', 'S:', SIM)
+
+for i in range(10,100,10):
+	model1.wv.vectors = control
+	print(create_perturbation_G(i))
 
 
