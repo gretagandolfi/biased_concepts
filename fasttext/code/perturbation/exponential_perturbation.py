@@ -42,10 +42,11 @@ def create_perturbation(x):
 vocab = []
 for k,v in model1.wv.vocab.items():
      vocab.append(k)
- 
+
+n_bins = 1000
 
 def create_perturbation_local(y,bin):
-	dec = len(vocab)/1000
+	dec = len(vocab)/n_bins
 	x = list(divide_chunks(vocab, int(dec)))
 	vec_x = [model1.wv[i] for i in x[bin]]
 	vec_before = []
