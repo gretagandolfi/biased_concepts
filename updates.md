@@ -232,7 +232,7 @@ I nearly finished the 'related work' section. From a practical point of view, I:
 - wrote the code for the Gaussian and exponential perturbation for the control space (globally applied)
 - tried to optimize the learning rate (with quite bad results) to train the model on new corpora
 
-To do: 
+_To do_: 
 * fix issue with learning rate +
 * try with different percentage of gaussian perturbation (by now: +10%, + 20%) +
 * try the exponential perturbation for the range of values stated in Aurelie's paper ([1.1, 1.2...1.9] and [0.1, 0.2...0.9]) +
@@ -249,10 +249,32 @@ The issue on the __learning rate__ can faced also with _random sampling_ of the 
 
 Lastly, I'm checking to find a way to control for the frequency of target and control words. 
 
-To do: 
+_To do_: 
 * control for the minmal variation between controls and targets. 
 * start writing - informally - the experimental setting/the steps I did.
 * learning rate.
+
+
+06.05.2020
+
+RSA gives a measure of the difference between two semantic spaces. I computed RSA between the control space and all its local random perturbations (_Gaussian_, _Exponential_). __Expectation__: random and real perturbation (obtained by the new training regime - parameters tuned with Bayesian Optimization) would be reflected by RSA. 
+
+I reflected upon the terms that can be used for the evaluation, here some possibilities: 
+* wiki terms: the most relevant terms (TFIDF) extracted by wikipedia pages about republican and democratic politics (generalizable, easy)
+* IAT terms: manual selection of already proven to be biased terms. 
+* SCSC inspired terms: focus on the distinction between in and out-group members (how republicans talk about democrats and viceversa) and minorities (ethicity, gender, sexual orientation, religion). The SCSC context provide an analysis of both the semantic and the formal features of stereotypical concepts, following this description we can hypothise the difference that we expect and if our model is able to show the semantic change. 
+
+_Ideas & To do_:
+* compute RSA also between control and control+rep, control+dem
+* artificially create the bias to: 
+	- check if the models reflect it
+	- compare the artificial and the 'real' bias
+	- how?
+		* acting on vectors: on clusters
+		* acting on corpora: e.g. on adjectives
+* train the model on particular syntactic-semantic relations e.g. target-adjectives
+
+
 
 
 
