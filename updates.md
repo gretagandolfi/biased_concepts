@@ -273,7 +273,7 @@ _Ideas & To do_:
 		* acting on vectors: on clusters
 		* acting on corpora: e.g. on adjectives
 * train the model on particular syntactic-semantic relations e.g. target-adjectives
-
+* thesis plan
 
 
 
