@@ -278,7 +278,7 @@ _Ideas & To do_:
 
 13.05.2020
 * Control of the minimal thesis plan
-* Discussion about terms and artifical bias 
+* Discussion about terms and artificial bias 
 
 _To do_:
 
