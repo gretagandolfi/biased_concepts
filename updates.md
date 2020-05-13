@@ -278,7 +278,15 @@ _Ideas & To do_:
 
 13.05.2020
 * Control of the minimal thesis plan
-* Discussion about terms and artificial bias 
+* Discussion about RSA, terms, artificial bias 
+
+__Interpretation of RSA results__: both EP and AN give a range of RSA scores (that depend on the choice of a particular paramtere, roughly, the exponent for EP and the percentage of noise added or subtracted for AN). Also the RSA between control and control+political_corpora was computed, and both the values lay outside the range of values for AN, but not for EP. This means that the training creates a variation of the control space which is not random (≠ AN), but there is a possibility of some kind of relation with with EP. Is there a way to find it out?
+	- control the variation in the first n words and see if there is an exponential relation
+	- control targets
+	
+__Artificial bias__: an easy an efficient way to insert artificial bias in a corpus could be to extract the adjective-noun relations, and act on them. An idea is to create a vocabulary of adjective used to define a target, tag them as positive or negative (sentiment analysis), keep the negative ones and subtitute the positive. It would be also interesting to check their relation with universals and existentials. 
+
+__Terms__: some ideas to control such as: people related words, professions... it is hard to find something that is present and not political -> biased. 
 
 _To do_:
-
++ think! :brain:
