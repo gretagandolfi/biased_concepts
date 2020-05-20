@@ -290,3 +290,27 @@ __Terms__: some ideas to control such as: people related words, professions... i
 
 _To do_:
 + think! :brain:
+
+20.05.2020
+* Analysis of EP
+* Terms proposals
+
+
+_1. Exponential Perturbation_
+Where the EP perturbation behaved as we expected (more noise, less alignment), EP seems to have a positive impact on the alignment (increasing it) when the range e=0,e=1 was considered. I was curious to see how the curve modifies if we increase e. So, I decided to take the interval that goes from e=0 to e=10 (applied globally and locally). The best alignment values (mean between SIM, MEN and RSA) are given, in the global case, when e=1.8,e=2.0 is considered. In the local case, for all the frequency bins considered, the best values are given when e is chosen from 4 to 5. 
+
+To see whether the EP can somehow explain the impact of political data (as a proxy of different use of collocations), I:
+* computed the RSA between:
+	- control (no perturbation) and republican space: 0,783
+ 	- the best global perturbation (e=2.0) and the republican space: 0,531
+ 	- best local_bin1 (e=4.7) and republican space: 0,332
+ 	- best local_bin2 (e=4.8) and republican space: 0,760
+	- best local_bin4 (e=4.5) and republican space: 0,760
+	- best local_bin16 (e=4.5) and republican space: 0,760
+* controlled the nn of 'immigrant' across models
+
+_2. Terms selection_
+
+__2.1 demographic analysis__: immigrants as out-group members/relevant political topic ( + related demographic features: terms referring to their ethnicity, language, religion of the main immigrant groups as listed by Wikipedia - https://en.wikipedia.org/wiki/Demographics_of_the_United_States : Mexican, Chinese, Indian, Salvadorian people) vs. American people as in-group members (+ demographic features: 73% white, 48% protestant, native English speaker 78%). It is justified to assume that American people are in-group since they represent the 54% of Reddit users are American). If terms related to American people are not enough, also other attributes usually associated with ‘people’ in general can be used (such as jobs). 
+	
+__2.2 political analysis__: consider words related to relevant political topics such as right/education/environment - as highlighted by wiki analysis with TDIDF - vs words related to more neutral topics, such as sports. 
