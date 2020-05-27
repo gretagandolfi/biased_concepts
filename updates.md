@@ -314,3 +314,5 @@ _2. Terms selection_
 __2.1 demographic analysis__: immigrants as out-group members/relevant political topic ( + related demographic features: terms referring to their ethnicity, language, religion of the main immigrant groups as listed by Wikipedia - https://en.wikipedia.org/wiki/Demographics_of_the_United_States : Mexican, Chinese, Indian, Salvadorian people) vs. American people as in-group members (+ demographic features: 73% white, 48% protestant, native English speaker 78%). It is justified to assume that American people are in-group since they represent the 54% of Reddit users are American). If terms related to American people are not enough, also other attributes usually associated with ‘people’ in general can be used (such as jobs). 
 	
 __2.2 political analysis__: consider words related to relevant political topics such as right/education/environment - as highlighted by wiki analysis with TDIDF - vs words related to more neutral topics, such as sports. 
+
+27.05.2020
