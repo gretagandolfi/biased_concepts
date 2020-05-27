@@ -1,5 +1,5 @@
 
-Shared repository for codes and data. 
+Shared repository for code and data. 
 
 __corpus.zip__ contains the Reddit dataset. 
 
