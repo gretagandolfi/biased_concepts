@@ -322,4 +322,3 @@ __To do__:
 * nns experiment
 * exponential experiment: look at particular terms, see if the exponential perturbation can be an explanation of new 'use' of the words.
 * write about the experiments in parallel + add considerations on frequency of terms in the Dataset Statistics.
-* 
