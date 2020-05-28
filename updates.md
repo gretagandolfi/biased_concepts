@@ -316,3 +316,10 @@ __2.1 demographic analysis__: immigrants as out-group members/relevant political
 __2.2 political analysis__: consider words related to relevant political topics such as right/education/environment - as highlighted by wiki analysis with TDIDF - vs words related to more neutral topics, such as sports. 
 
 27.05.2020
+We defined a set of 54 control and target terms (notice some possible analysis/pitfalls: proper names, 'liberals',...)
+
+__To do__:
+* nns experiment
+* exponential experiment: look at particular terms, see if the exponential perturbation can be an explanation of new 'use' of the words.
+* write about the experiments in parallel + add considerations on frequency of terms in the Dataset Statistics.
+* 
